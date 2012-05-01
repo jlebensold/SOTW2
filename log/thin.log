@@ -1,0 +1,17 @@
+>> Writing PID to tmp/pids/thin.pid
+>> Changing process privilege to ec2-user:ec2-user
+>> Exiting!
+/www/documentcloud/sotw-docucloud/config.ru:2:in `block in <main>': undefined method `default_options' for Sinatra::Application:Class (NoMethodError)
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/builder.rb:51:in `instance_eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/builder.rb:51:in `initialize'
+	from /www/documentcloud/sotw-docucloud/config.ru:1:in `new'
+	from /www/documentcloud/sotw-docucloud/config.ru:1:in `<main>'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/lib/rack/adapter/loader.rb:36:in `eval'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/lib/rack/adapter/loader.rb:36:in `load'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/lib/thin/controllers/controller.rb:181:in `load_rackup_config'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/lib/thin/controllers/controller.rb:71:in `start'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/lib/thin/runner.rb:185:in `run_command'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/lib/thin/runner.rb:151:in `run!'
+	from /usr/local/lib/ruby/gems/1.9.1/gems/thin-1.2.11/bin/thin:6:in `<top (required)>'
+	from /usr/local/bin/thin:19:in `load'
+	from /usr/local/bin/thin:19:in `<main>'
