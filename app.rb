@@ -1,11 +1,8 @@
-require 'sinatra'
 set :server, :thin
 set :port, 80
 set :host, '10.126.35.29'
 set :public_folder, File.dirname(__FILE__) + '/public'
 
-
-require 'pp'
 
 get '/text/*.txt' do  | file |
   path = File.dirname(__FILE__) +"/text/#{file}.txt"
